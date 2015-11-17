@@ -314,7 +314,7 @@ def configure() {
         	ledBehave=ledBehavior.toInteger()
         }
 	def ledBright = 50
-    	if (ledBrightness) {
+    	if (ledBrightness != null) {
         	ledBright=ledBrightness.toInteger()
 		}
     log.debug "Sending configure commands - monitorInterval '${monitorInt}', ledBehavior '${ledBehave}'"
